@@ -1,0 +1,6 @@
+<h1>Hi <%= @current_user %></h1>
+<%= link_to 'The secret', secret_path %>
+<%= form_tag sessions_logout_path do %>
+    <%= submit_tag 'logout' %>
+<% end %>
+
